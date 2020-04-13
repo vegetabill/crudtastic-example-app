@@ -1,0 +1,25 @@
+{
+  "name": "crudtastic-example-app",
+  "version": "1.0.0",
+  "description": "reference implementation showcasing the features of crudtastic",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon --watch . --watch ../crudtastic"
+  },
+  "author": "vegetabill",
+  "license": "MIT",
+  "dependencies": {
+    "crudtastic": "file:../crudtastic"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0"
+  }
+}
