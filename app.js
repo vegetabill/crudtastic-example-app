@@ -6,7 +6,7 @@ const dbUrl =
   process.env.DATABASE_URL ||
   'postgres://localhost:5432/crudtastic-example-app';
 
-const server = new Server({ dbUrl });
+const server = new Server({ dbUrl, eagerVerifyDb: true });
 
 // TODO auto-register controllers in folder
 server.register(BooksController);
