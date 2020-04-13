@@ -1,7 +1,6 @@
 const { Server } = require('crudtastic');
 
 const BooksController = require('./app/controllers/books-controller');
-const Book = require('./app/models/book');
 
 const dbUrl =
   process.env.DATABASE_URL ||
@@ -9,6 +8,7 @@ const dbUrl =
 
 const server = new Server({ dbUrl });
 
-server.register(BooksController, Book);
+// TODO auto-register controllers in folder
+server.register(BooksController);
 
 server.listen();
