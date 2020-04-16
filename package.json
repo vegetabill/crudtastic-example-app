@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev": "nodemon --watch . --watch ../crudtastic"
+    "dev": "nodemon --watch . --watch ../crudtastic --unhandled-rejections=strict",
+    "db:recreate": "npm run db:drop && npm run db:create",
+    "db:create": "createdb crudtastic-example && psql crudtastic-example < db.sql",
+    "db:drop": "dropdb --if-exists crudtastic-example",
+    "db:dump": " pg_dump --no-privileges --no-owner crudtastic-example > db.sql"
   },
   "author": "vegetabill",
   "license": "MIT",
