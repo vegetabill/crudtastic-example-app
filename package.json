@@ -16,7 +16,7 @@
   "author": "vegetabill",
   "license": "MIT",
   "dependencies": {
-    "crudtastic": "file:../crudtastic"
+    "crudtastic": "^0.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

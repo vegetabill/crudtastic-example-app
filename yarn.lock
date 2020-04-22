@@ -636,8 +636,10 @@ create-error@~0.3.1:
   resolved "https://registry.yarnpkg.com/create-error/-/create-error-0.3.1.tgz#69810245a629e654432bf04377360003a5351a23"
   integrity sha1-aYECRaYp5lRDK/BDdzYAA6U1GiM=
 
-"crudtastic@file:../crudtastic":
+crudtastic@^0.1.0:
   version "0.1.0"
+  resolved "https://registry.yarnpkg.com/crudtastic/-/crudtastic-0.1.0.tgz#59f1a25f8e73096a0bfdb0bcec2d038b14d7ba12"
+  integrity sha512-wuaEfmwAv1dcA98eS6NYR0kn19kyCAkWBexcUo0R0/zGLY0fR8kBf9WQ7vVuOFXJp4WAu+qGfXTYlFVIlTS2gQ==
   dependencies:
     bluebird "^3.7.2"
     bookshelf "^1.1.1"
