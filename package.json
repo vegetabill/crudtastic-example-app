@@ -4,7 +4,8 @@
   "description": "reference implementation showcasing the features of crudtastic",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run db:recreate && npm run test:fast",
+    "test:fast": "npx mocha",
     "start": "node app.js",
     "dev": "nodemon --watch . --watch ../crudtastic --unhandled-rejections=strict",
     "db:recreate": "npm run db:drop && npm run db:create",
@@ -24,6 +25,8 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.19.0"
+    "eslint-plugin-react": "^7.19.0",
+    "mocha": "^7.1.1",
+    "supertest": "^4.0.2"
   }
 }
