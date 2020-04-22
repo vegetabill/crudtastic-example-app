@@ -11,7 +11,8 @@
     "db:recreate": "npm run db:drop && npm run db:create",
     "db:create": "createdb crudtastic-example && psql crudtastic-example < db.sql",
     "db:drop": "dropdb --if-exists crudtastic-example",
-    "db:dump": " pg_dump --no-privileges --no-owner crudtastic-example > db.sql"
+    "db:dump": " pg_dump --no-privileges --no-owner crudtastic-example > db.sql",
+    "local:setup": "rm -rf ./node_modules/crudtastic && ln -s ~/dev/crudtastic ./node_modules/crudtastic"
   },
   "author": "vegetabill",
   "license": "MIT",
